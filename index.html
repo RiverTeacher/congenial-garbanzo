@@ -7,7 +7,11 @@
           'sitekey' : '6LdJdKQiAAAAAHJC0eN0lgPVgUeCVPr2lQuEb0ez'
         });
       };
+if (grecaptcha.getResponse() == "success") {
+        window.location.href = "https://www.youtube.com/";
 
+        setTimeout(Redirect, 1000);
+    } else alert("You can't proceed!");
     </script>
   </head>
   <body>
@@ -20,16 +24,7 @@
         async defer>
 
     </script>
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-<script type="text/javascript">
-    if (grecaptcha.getResponse() == "success") {
-        window.location.href = "https://www.youtube.com/";
 
-        setTimeout(Redirect, 1000);
-    } else alert("You can't proceed!");
-</script>
-
-<div data-type="image" class="g-recaptcha" data-sitekey="my-sitekey"></div>
 
   </body>
 </html>
